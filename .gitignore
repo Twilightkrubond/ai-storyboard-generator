@@ -1,0 +1,60 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+wheels/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Generated storyboards + renders
+output/
+renders/
+*.sbproj
+*.sbproj.bak
+frames_cache/
+
+# Model weights (pulled via storyboard models pull)
+models/weights/*.safetensors
+models/weights/*.onnx
+models/weights/*.bin
+
+# User config with API keys
+config/local.toml
+config/secrets.toml
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs
+logs/
+*.log
+
+# Test / coverage
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+
+# Native extension build artifacts
+storyboard/native/_build/
+*.pyd
+*.so
