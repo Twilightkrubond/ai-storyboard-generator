@@ -1,0 +1,28 @@
+[project]
+title = "Untitled Board"
+author = ""
+fps = 24
+aspect = "16:9"
+panel_width = 512
+panel_height = 288
+
+[planner]
+backend = "heuristic"          # heuristic | llm
+llm_model = "planner-small-v2"
+max_shots_per_scene = 24
+min_shot_seconds = 1.5
+
+[frames]
+backend = "local"              # local | remote | none
+local_model = "sdxl-turbo-sb"
+remote_endpoint = ""
+cache = true
+cache_dir = "frames_cache"
+
+[export]
+formats = ["pdf", "png_contact_sheet", "fdx"]
+include_notes = true
+
+[ui]
+theme = "dark"
+autosave_seconds = 120
